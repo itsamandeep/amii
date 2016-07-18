@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amii</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.4.0/annyang.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>
+	<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+	<script>
+		if (annyang) {
+  		// Let's define a command.
+  		var command1 = {
+    			'google': function() { 
+    			responsiveVoice.speak("going to google");
+    			setTimeout("location.href = 'http://www.google.com';", 2500); }
+  		};
+  		var command2 = {
+    		'bye': function() { alert('bye world!'); }
+  		};
+
+  // Add our commands to annyang
+  annyang.addCommands(command1);
+  annyang.addCommands(command2);
+
+  // Start listening.
+  annyang.start();
+}
+</script>
+</body>
+</html>
