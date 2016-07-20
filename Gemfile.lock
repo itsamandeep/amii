@@ -41,7 +41,6 @@ GEM
     arel (7.0.0)
     builder (3.2.2)
     byebug (9.0.5)
-    c_gpio (0.0.5)
     coderay (1.1.1)
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
@@ -119,6 +118,7 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
+    rpi_gpio (0.3.0)
     sass (3.4.22)
     sass-rails (5.0.5)
       railties (>= 4.0.0, < 6)
@@ -163,7 +163,6 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  c_gpio (~> 0.0.5)
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   jquery-rails
@@ -171,6 +170,7 @@ DEPENDENCIES
   pry
   puma (~> 3.0)
   rails (~> 5.0.0)
+  rpi_gpio
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
