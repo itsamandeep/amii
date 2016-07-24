@@ -9,6 +9,7 @@
   </head>
 
   <body>
+  <%= yield %>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.4.0/annyang.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>
 	<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
@@ -16,12 +17,16 @@
 		if (annyang) {
   		// Let's define a command.
   		var command1 = {
-    			'google': function() { 
-    			responsiveVoice.speak("going to google");
-    			setTimeout("location.href = 'http://www.google.com';", 2500); }
+    		'on': function() { 
+    	   responsiveVoice.speak("switching 21 on");
+         $( "#21_on" ).trigger( "click" );
+        }
   		};
   		var command2 = {
-    		'bye': function() { alert('bye world!'); }
+    		'off': function() { 
+         responsiveVoice.speak("switching 21 off");
+         $( "#21_off" ).trigger( "click" );
+        }
   		};
 
   // Add our commands to annyang
