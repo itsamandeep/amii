@@ -1,0 +1,4 @@
+<% 
+RPi::GPIO.setup params[:pin], :as => :output
+RPi::GPIO.set_low params[:pin]
+%>

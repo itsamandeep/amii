@@ -5,9 +5,9 @@ class PagesController < ApplicationController
   def about
   end
 
-  def switch_21_on
+  def switch_on
   end
 
-  def switch_21_off
+  def switch_off
   end
 end

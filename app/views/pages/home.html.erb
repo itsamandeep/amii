@@ -1,6 +1,3 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<%= link_to "Switch 21 On",switch_21_on_path, remote: true, id: "21_on" %>
-
-<%= link_to "Switch 21 Off",switch_21_off_path, remote: true, id: "21_off" %>
+<%= link_to "Switch 21 On",switch_on_path(:pin => 21), remote: true, id: "21_on" %>
+<%= link_to "Switch 21 Off",switch_off_path(:pin => 21), remote: true, id: "21_off" %>
+<br>

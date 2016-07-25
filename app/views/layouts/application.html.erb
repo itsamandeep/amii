@@ -17,14 +17,14 @@
 		if (annyang) {
   		// Let's define a command.
   		var command1 = {
-    		'on': function() { 
-    	   responsiveVoice.speak("switching 21 on");
+    		'lights on': function() { 
+    	   responsiveVoice.speak("switched 21 on");
          $( "#21_on" ).trigger( "click" );
         }
   		};
   		var command2 = {
-    		'off': function() { 
-         responsiveVoice.speak("switching 21 off");
+    		'lights off': function() { 
+         responsiveVoice.speak("switched 21 off");
          $( "#21_off" ).trigger( "click" );
         }
   		};
