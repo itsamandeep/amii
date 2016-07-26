@@ -1,4 +1,4 @@
 <% 
-RPi::GPIO.setup params[:pin], :as => :output
-RPi::GPIO.set_high params[:pin]
+RPi::GPIO.setup params[:pin].to_i, :as => :output
+RPi::GPIO.set_high params[:pin].to_i
 %>
